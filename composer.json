@@ -1,0 +1,33 @@
+{
+    "name": "ZuZu/WebSpidy",
+    "type": "application",
+    "description": "A simple PHP Web Scraper",
+    "keywords": ["scraper"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Petelin Dmitry",
+            "email": "petelindv@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl": "*",
+        "symfony/css-selector": "2.1.*",
+        "symfony/dom-crawler": "2.1.*",
+        "guzzle/http": "2.8.*",
+        "doctrine/common": "*",
+        "monolog/monolog": "1.*"
+    },
+
+    "replace": {
+       "ZuZu/Grabber": "self.version"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "ZuZu": "src/",
+            "ZuZu\\Tests": "tests/"
+        }
+    }
+}

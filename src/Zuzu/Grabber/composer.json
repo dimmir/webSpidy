@@ -1,0 +1,26 @@
+{
+    "name": "ZuZu/Grabber",
+    "type": "application",
+    "description": "A simple grabber based on the HTTP client library Guzzle ",
+    "keywords": ["grabber", "html parser", "crawler", "Guzzle", "domCrawler"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Petelin Dmitry",
+            "email": "petelindv@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl": "*",
+        "symfony/css-selector": "2.1.*",
+        "symfony/dom-crawler": "2.1.*",
+        "guzzle/http": "2.8.*",
+        "doctrine/common": "*",
+        "monolog/monolog": "1.*"
+    },
+    "autoload": {
+        "psr-0": {"ZuZu\\Grabber": ""}
+    },
+    "target-dir": "ZuZu/Grabber"
+}
